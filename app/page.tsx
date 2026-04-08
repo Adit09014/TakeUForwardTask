@@ -10,7 +10,7 @@ export default function Home() {
   const monthKey = `${currentDate.getFullYear()}-${currentDate.getMonth()}`
 
 
-  const changeMonth = (dir) => {
+  const changeMonth = (dir:number) => {
     const newDate = new Date(currentDate)
     newDate.setMonth(currentDate.getMonth() + dir)
     setCurrentDate(newDate)
